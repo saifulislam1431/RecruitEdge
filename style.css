@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Ysabeau+SC:wght@300&display=swap');
 
 * {
+    font-family: 'Fira Sans', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-
-    font-family: 'Fira Sans', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 30px;
@@ -17,10 +16,12 @@ body {
 /* Common */
 .btnPrimary {
     border: 1px solid #FC6744;
-    padding: 5px 10px;
+    padding: 10px 20px;
     color: #FC6744;
-    border-radius: 5px;
+    border-radius: 60px;
     transition: all .5s ease;
+    background-color: transparent;
+    font-size: 18px;
 }
 
 .btnPrimary:hover {
@@ -42,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .nav-links {
@@ -84,15 +85,30 @@ a:is(:link, :active, :visited).linkActive {
 
 /* Hero Section */
 #hero-section{
-    width: 100%;
-    height: 90%;
+    margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: url("./assets/banner1.jpg");
+    justify-content: left;
+    background-image: url(./assets/banner1.jpg), linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+    height: 80vh;
+    background-blend-mode: multiply;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-   background-attachment: fixed;
-   top: 0;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+.hero-content{
+    padding: 0 150px 0 50px;
+}
+.hero-title{
+    font-size: 50px;
+    color: #42D0E8;
+}
+.hero-subtitle{
+    margin: 30px 0;
+font-size: 24px;
+color: white;
 }
 
 
@@ -103,6 +119,10 @@ a:is(:link, :active, :visited).linkActive {
 
 
 @media(max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+    /* Navbar */
     .hamburger {
         display: block;
     }
@@ -132,5 +152,23 @@ transition: .4s;
     }
     .nav-links.active{
         top: 70px;
+    }
+
+    /* Hero section */
+
+    .hero-content{
+        padding: 0 10px 0 10px;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-subtitle{
+        margin: 30px 0;
+    font-size: 18px;
+    }
+    #hero-section{
+
+        height: 50vh;
+
     }
 }
