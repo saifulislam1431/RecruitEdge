@@ -118,6 +118,8 @@ a:is(:link, :active, :visited).linkActive {
 font-size: 24px;
 color: white;
 }
+/* Hero Section end*/
+
 
 /*Hero Info section  */
 #hero-info{
@@ -166,7 +168,7 @@ color: grey;
     margin: 20px 0;
     line-height: 30px;
 }
-
+/*Hero Info section end */
 
 
 
@@ -209,6 +211,7 @@ transition: .4s;
     .nav-links.active{
         top: 70px;
     }
+    /* Navbar end*/
 
     /* Hero section */
 
@@ -227,6 +230,7 @@ transition: .4s;
         height: 50vh;
 
     }
+    /* Hero section End */
     /* Hero info */
     .info-employers , .info-jobseekers{
         flex-direction: column-reverse;
@@ -246,5 +250,6 @@ transition: .4s;
     .info-details{
     padding: 10px 20px;
     }
+    /* Hero info end*/
    
 }
