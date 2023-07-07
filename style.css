@@ -10,7 +10,6 @@
 body {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 /* Common */
@@ -28,8 +27,17 @@ body {
     background-color: #FC6744;
     color: white;
 }
-
+.container{
+    padding: 0 30px;
+}
 /* Header */
+header{
+    z-index: 500;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 20px lightgrey;
+}
 #brandName {
     font-family: 'Ysabeau SC', sans-serif;
     color: #42D0E8;
@@ -111,6 +119,54 @@ font-size: 24px;
 color: white;
 }
 
+/*Hero Info section  */
+#hero-info{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+
+    gap: 0;
+align-items: center;
+justify-content: center;
+background-color: #42cfe86b;
+}
+.info-container{
+    width: 100%;
+}
+.info-employers , .info-jobseekers{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.info-img{
+    width: 610px;
+    height: 500px;
+}
+.info-details{
+padding: 0 50px;
+}
+.info-title{
+    text-transform: uppercase;
+font-size: 30px;
+font-weight: 500;
+letter-spacing: 4px;
+}
+.info-subtitle{
+font-size: 18px;
+font-weight: 600;
+margin: 10px 0;
+color: grey;
+}
+.info-description{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
 
 
 
@@ -119,7 +175,7 @@ color: white;
 
 
 @media(max-width: 768px) {
-    body {
+    .container {
         padding: 0 10px;
     }
     /* Navbar */
@@ -145,7 +201,7 @@ left: 0;
 top: -100%;
 flex-direction: column;
 gap: 30px;
-background-color: #42cfe82d;
+background-color: #42cfe8d8;
 width: 100%;
 text-align: center;
 transition: .4s;
@@ -171,4 +227,24 @@ transition: .4s;
         height: 50vh;
 
     }
+    /* Hero info */
+    .info-employers , .info-jobseekers{
+        flex-direction: column-reverse;
+    }
+    .info-employers{
+        padding-bottom: 25px;
+    }
+    .info-jobseekers{
+        border-top: 2px solid #FC6744;
+        position: relative;
+        padding-top: 25px;
+    }
+    .info-img{
+        width: 100%;
+        height: 250px;
+    }
+    .info-details{
+    padding: 10px 20px;
+    }
+   
 }
