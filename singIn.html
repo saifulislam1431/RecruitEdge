@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecruitEdge | Sign In</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./auth.css">
     <link rel="shortcut icon" href="./assets/recruit.png" type="image/x-icon">
 </head>
 <body>
@@ -29,9 +30,43 @@
 </div>
         </nav>
     </header>
-    
+    <main class="container">
+<section class="section-container">
+<div class="form-container">
+<div>
+    <img src="./assets/login.svg" alt="Login" class="log-img">
+</div>
+<div>
+    <form onsubmit="handleLogin()" id="form">
+        <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Your Email" class="input-field">
+
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter Password" id="password" name="password" class="input-field">
+
+
+    <input type="submit" value="Sign In" class="btnPrimary">
+    </form>
+    <div class="extra-info">
+<div class="forget-new">
+<a href="#" class="link">Forget Password?</a>
+<p class="new-link">New To RecruitEdge? <a href="./singUp.html" class="signUp">Sign Up</a></p>
+</div>
+    </div>
+    <div class="social-info">
+<p>Or With</p>
+<img src="./assets/google.png" alt="Google" class="icon">
+<img src="./assets/facebook.png" alt="Facebook" class="icon">
+<img src="./assets/github.png" alt="Github" class="icon">
+    </div>
+</div>
+</div>
+</section>
+    </main>
 
     <script src="./script/app.js"></script>
+    <script src="./script/auth.js"></script>
     <script src="https://kit.fontawesome.com/b1a6899ccf.js" crossorigin="anonymous"></script>
 </body>
 </html>

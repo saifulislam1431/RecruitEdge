@@ -496,5 +496,9 @@ transition: .4s;
     #candidate-container{
         grid-template-columns: repeat(1 ,1fr);
     }
-   
+
+    /* Footer */
+.footer-container{
+    grid-template-columns: repeat(1 , 1fr);
+}   
 }

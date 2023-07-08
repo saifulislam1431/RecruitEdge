@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecruitEdge | Sign Up</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./auth.css">
     <link rel="shortcut icon" href="./assets/recruit.png" type="image/x-icon">
 </head>
 <body>
@@ -29,9 +30,54 @@
 </div>
         </nav>
     </header>
-    
+    <main class="container">
+<section class="section-container">
+<div class="form-container">
+<div>
+    <img src="./assets/login.svg" alt="Login" class="log-img">
+</div>
+<div>
+    <form onsubmit="handleRegister()" id="form">
+
+        <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your Name" class="input-field">
+
+    <label for="company">Company</label>
+    <input type="text" name="company" id="company" placeholder="Your company name" class="input-field">
+
+
+        <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Your Email" class="input-field">
+
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter Password" id="password" name="password" class="input-field">
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" placeholder="Enter confirm password" id="confirmPassword" name="confirmPassword" class="input-field">
+
+
+
+    <input type="submit" value="Sign Up" class="btnPrimary">
+    </form>
+    <div class="extra-info">
+<div class="forget-new">
+<p class="new-link">Already have an account? <a href="./singIn.html" class="signUp">Sign In</a></p>
+</div>
+    </div>
+    <div class="social-info">
+<p>Or With</p>
+<img src="./assets/google.png" alt="Google" class="icon">
+<img src="./assets/facebook.png" alt="Facebook" class="icon">
+<img src="./assets/github.png" alt="Github" class="icon">
+    </div>
+</div>
+</div>
+</section>
+    </main>
 
     <script src="./script/app.js"></script>
+    <script src="./script/auth.js"></script>
     <script src="https://kit.fontawesome.com/b1a6899ccf.js" crossorigin="anonymous"></script>
 </body>
 </html>

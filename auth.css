@@ -1,0 +1,49 @@
+.section-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-img{
+    width: 90%;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#email, #password, #confirmPassword, #name, #company{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.extra-info{
+    margin: 20px 0;
+}
+.link{
+color: #0acdf0;
+}
+.new-link{
+font-weight: 500;
+margin: 10px 0;
+}
+.signUp{
+    color: #FC6744;
+}
+.social-info{
+    border-top: 2px solid #FC6744;
+    text-align: center;
+}
+.social-info p{
+   margin: 20px 0;
+    text-align: center;
+    font-weight: 700;
+    color: #FC6744;
+}
+.icon{
+    width: 32px;
+    margin: 0 15px;
+}

@@ -20,7 +20,7 @@ const search = () =>{
     const candidateRole = candidatesContainer.querySelectorAll(".candidate-role")
     const candidateLocation = candidatesContainer.querySelectorAll(".candidate-location")
 
-    for (let i = 0 ; i < candidateRole.length || i < candidateLocation.length ; i++){
+    for (let i = 0 ; i < candidateRole.length && i < candidateLocation.length ; i++){
         let match = candidates[i].querySelectorAll(".candidate-role")[0] || candidates[i].querySelectorAll(".candidate-location")[0];
 
         if(match){
