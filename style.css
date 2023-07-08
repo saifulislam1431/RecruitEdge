@@ -217,6 +217,7 @@ color: grey;
 .feature-icon{
     width: 50px;
 }
+/* Feature section end */
 
 
 
@@ -302,5 +303,6 @@ transition: .4s;
     .all-feature{
         grid-template-columns: repeat(1 , 1fr);   
     }
+    /* Feature section end */
    
 }
