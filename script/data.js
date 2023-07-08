@@ -56,4 +56,15 @@ ${allSkills()}
     });
 }
 
+
+document.getElementById("more-btn").addEventListener("click", ()=>{
+    const btn = document.getElementById("more-btn");
+    btn.classList.add("hide")
+    const candidateContainer = document.getElementById("candidate-container");
+    candidateContainer.innerHTML = "";
+    loadData();
+})
+
+
+
 loadData(true);

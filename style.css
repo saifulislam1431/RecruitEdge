@@ -315,6 +315,15 @@ font-weight: 500;
     color: white;
 }
 
+#more-btn{
+    text-align: center;
+    margin: 25px auto;
+}
+
+.hide{
+    display: none;
+}
+
 
 @media(max-width: 768px) {
     .container {
