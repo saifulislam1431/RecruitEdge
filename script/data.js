@@ -54,17 +54,16 @@ ${allSkills()}
 <button class="btnSec">Hire Now</button>
         </div>`
     });
+
 }
 
+loadData(true);
 
 document.getElementById("more-btn").addEventListener("click", ()=>{
     const btn = document.getElementById("more-btn");
-    btn.classList.add("hide")
+    btn.classList.toggle("hide")
     const candidateContainer = document.getElementById("candidate-container");
     candidateContainer.innerHTML = "";
     loadData();
 })
 
-
-
-loadData(true);
